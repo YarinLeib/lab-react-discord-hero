@@ -1,15 +1,12 @@
-import discordLogo from '../assets/discord-logo.png';
-import lines from '../assets/3-lines.png';
+import discordlogo from '../assets/discord-logo-white.png';
+import menu from '../assets/menu-icon.png';
+import '../App.css';
 
-export function SiteHeader() {
+export function Navbar() {
   return (
-    <header>
-      <div className='header-top'>
-        <img src={discordLogo} alt='Discord Logo' className='logo' />
-        <button id='MenuButton'>
-          <img src={lines} alt='Menu' className='menu-icon' />
-        </button>
-      </div>
-    </header>
+    <div className="navbar">
+      <img src={discordlogo} alt="Discord Logo" className="discordlogo" />
+      <img src={menu} alt="Menu Icon" className="menuicon" />
+    </div>
   );
 }
