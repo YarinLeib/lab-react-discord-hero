@@ -1,3 +1,3 @@
 export function DownloadButton() {
-  return <p>Download for Mac</p>;
+  return <button className='DownloadButton'>Download for Mac</button>;
 }
